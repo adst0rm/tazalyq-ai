@@ -1,240 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tazalyq AI - Revolutionizing waste management through artificial intelligence">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tazalyq AI - Revolutionizing waste management through artificial intelligence"
+    />
     <title>Tazalyq AI - Smart Waste Management Solutions</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body class="font-[Poppins]">
+  <body class="font-[Poppins]">
     <!-- Preloader -->
-    <div id="preloader" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
-        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-green-500"></div>
+    <div
+      id="preloader"
+      class="fixed inset-0 bg-white z-50 flex items-center justify-center"
+    >
+      <div
+        class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-green-500"
+      ></div>
     </div>
 
     <!-- Header -->
     <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-md z-40">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-green-600">
-                <i class="fas fa-recycle mr-2"></i>Tazalyq AI
-            </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#impact" class="nav-link">Impact</a>
-                <a href="#achievements" class="nav-link">Achievements</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <button class="md:hidden" id="mobile-menu-button">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </nav>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white">
-            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#impact" class="nav-link">Impact</a>
-                <a href="#achievements" class="nav-link">Achievements</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
+      <nav
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold text-green-600">
+          <i class="fas fa-recycle mr-2"></i>Tazalyq AI
         </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#impact" class="nav-link">Impact</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="md:hidden" id="mobile-menu-button">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-white">
+        <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#impact" class="nav-link">Impact</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="home"
-            class="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700 text-white">
-            <div class="container mx-auto px-4 text-center" data-aos="fade-up">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6">Revolutionizing Waste Management with AI</h1>
-                <p class="text-xl md:text-2xl mb-8">Where Environmental Science Meets Technology</p>
-                <a href="#impact"
-                    class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition duration-300 inline-block">
-                    Learn More <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </section>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700 text-white"
+      >
+        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+          <h1 class="text-5xl md:text-6xl font-bold mb-6">
+            Revolutionizing Waste Management with AI
+          </h1>
+          <p class="text-xl md:text-2xl mb-8">
+            Where Environmental Science Meets Technology
+          </p>
+          <a
+            href="#impact"
+            class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition duration-300 inline-block"
+          >
+            Learn More <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </section>
 
-        <!-- Impact Section -->
-        <section id="impact" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Our Impact</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition duration-300"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <div class="text-4xl text-green-600 mb-4">
-                            <i class="fas fa-weight-hanging"></i>
-                        </div>
-                        <h3 class="text-3xl font-bold mb-2">300+</h3>
-                        <p class="text-gray-600">Kilograms of Waste Collected</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition duration-300"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <div class="text-4xl text-green-600 mb-4">
-                            <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <h3 class="text-3xl font-bold mb-2">3K USD</h3>
-                        <p class="text-gray-600">Business School Promotion</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition duration-300"
-                        data-aos="fade-up" data-aos-delay="300">
-                        <div class="text-4xl text-green-600 mb-4">
-                            <i class="fas fa-medal"></i>
-                        </div>
-                        <h3 class="text-3xl font-bold mb-2">#3</h3>
-                        <p class="text-gray-600">Waste Supplier for Local Recycling</p>
-                    </div>
-                </div>
+      <!-- Impact Section -->
+      <section id="impact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">
+            Our Impact
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="text-4xl text-green-600 mb-4">
+                <i class="fas fa-weight-hanging"></i>
+              </div>
+              <h3 class="text-3xl font-bold mb-2">300+</h3>
+              <p class="text-gray-600">Kilograms of Waste Collected</p>
             </div>
-        </section>
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="text-4xl text-green-600 mb-4">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h3 class="text-3xl font-bold mb-2">3K USD</h3>
+              <p class="text-gray-600">Business School Promotion</p>
+            </div>
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="text-4xl text-green-600 mb-4">
+                <i class="fas fa-medal"></i>
+              </div>
+              <h3 class="text-3xl font-bold mb-2">#3</h3>
+              <p class="text-gray-600">Waste Supplier for Local Recycling</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Achievements Section -->
-        <section id="achievements" class="py-20">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Achievements & Recognition</h2>
-                <div class="swiper achievements-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
-                            <div class="bg-white p-8 rounded-xl shadow-lg">
-                                <div class="text-4xl text-green-600 mb-4">
-                                    <i class="fas fa-trophy"></i>
-                                </div>
-                                <h3 class="text-2xl font-bold mb-4">National Recognition</h3>
-                                <p class="text-gray-600">Winner of multiple national startup competitions</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
-                            <div class="bg-white p-8 rounded-xl shadow-lg">
-                                <div class="text-4xl text-green-600 mb-4">
-                                    <i class="fas fa-globe"></i>
-                                </div>
-                                <h3 class="text-2xl font-bold mb-4">Global Impact</h3>
-                                <p class="text-gray-600">International startup competition victories</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
-                            <div class="bg-white p-8 rounded-xl shadow-lg">
-                                <div class="text-4xl text-green-600 mb-4">
-                                    <i class="fas fa-lightbulb"></i>
-                                </div>
-                                <h3 class="text-2xl font-bold mb-4">Innovation</h3>
-                                <p class="text-gray-600">Pioneering AI integration in environmental solutions</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+      <!-- Achievements Section -->
+      <section id="achievements" class="py-20">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">
+            Achievements & Recognition
+          </h2>
+          <div class="swiper achievements-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                  <div class="text-4xl text-green-600 mb-4">
+                    <i class="fas fa-trophy"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-4">National Recognition</h3>
+                  <p class="text-gray-600">
+                    Winner of multiple national startup competitions
+                  </p>
                 </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                  <div class="text-4xl text-green-600 mb-4">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-4">Global Impact</h3>
+                  <p class="text-gray-600">
+                    International startup competition victories
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                  <div class="text-4xl text-green-600 mb-4">
+                    <i class="fas fa-lightbulb"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-4">Innovation</h3>
+                  <p class="text-gray-600">
+                    Pioneering AI integration in environmental solutions
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Trust Section -->
-        <section id="trust" class="py-20 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Companies and Organizations Trust Us
-                </h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-                    <a href="https://fund.nu.edu.kz/en/" target="_blank" rel="noopener noreferrer" class="flex justify-center items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="100"><img src="assets/logos/nazarbayev-university.png" alt="Nazarbayev University" class="max-h-16 w-auto grayscale hover:grayscale-0 transition duration-300"></a>
-                    <div class="flex justify-center items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/logos/oral-tazaz.png" alt="Oral Tazaz Service"
-                            class="max-h-16 w-auto grayscale hover:grayscale-0 transition duration-300">
-                    </div>
-                    
-                    <div class="flex justify-center items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300"
-                        data-aos="fade-up" data-aos-delay="300">
-                        <img src="assets/logos/astana-motors.png" alt="Astana Motors"
-                            class="max-h-16 w-auto grayscale hover:grayscale-0 transition duration-300">
-                    </div>
-                    <div class="flex justify-center items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300"
-                        data-aos="fade-up" data-aos-delay="400">
-                        <img src="assets/logos/karachaganak.png" alt="Karachaganak Petroleum"
-                            class="max-h-16 w-auto grayscale hover:grayscale-0 transition duration-300">
-                    </div>
-                </div>
-                <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="500">
-                    <p class="text-lg text-gray-600">Trusted by leading organizations in Kazakhstan and beyond</p>
-                </div>
+      <!-- Trust Section -->
+      <section id="trust" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">
+            Companies and Organizations Trust Us
+          </h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+            <a
+              href="https://fund.nu.edu.kz/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex justify-center items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300 cursor-pointer"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              ><img
+                src="assets/logos/nazarbayev-university.png"
+                alt="Nazarbayev University"
+                class="max-h-16 w-auto grayscale hover:grayscale-0 transition duration-300"
+            /></a>
+            <div
+              class="flex justify-center items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <img
+                src="assets/logos/oral-tazaz.png"
+                alt="Oral Tazaz Service"
+                class="max-h-16 w-auto grayscale hover:grayscale-0 transition duration-300"
+              />
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4 text-center" data-aos="fade-up">
-                <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
-                <p class="text-xl mb-8">Interested in revolutionizing waste management in your region?</p>
-                <a href="mailto:contact@tazalyq.ai"
-                    class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition duration-300 inline-block">
-                    Contact Us <i class="fas fa-envelope ml-2"></i>
-                </a>
+            <div
+              class="flex justify-center items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <img
+                src="assets/logos/astana-motors.png"
+                alt="Astana Motors"
+                class="max-h-16 w-auto grayscale hover:grayscale-0 transition duration-300"
+              />
             </div>
-        </section>
+            <div
+              class="flex justify-center items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <img
+                src="assets/logos/karachaganak.png"
+                alt="Karachaganak Petroleum"
+                class="max-h-16 w-auto grayscale hover:grayscale-0 transition duration-300"
+              />
+            </div>
+          </div>
+          <div
+            class="text-center mt-12"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <p class="text-lg text-gray-600">
+              Trusted by leading organizations in Kazakhstan and beyond
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+          <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+          <p class="text-xl mb-8">
+            Interested in revolutionizing waste management in your region?
+          </p>
+          <a
+            href="mailto:contact@tazalyq.ai"
+            class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition duration-300 inline-block"
+          >
+            Contact Us <i class="fas fa-envelope ml-2"></i>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <div class="text-2xl font-bold text-green-500 mb-4">
-                        <i class="fas fa-recycle mr-2"></i>Tazalyq AI
-                    </div>
-                    <p class="text-gray-400">Transforming waste management through artificial intelligence</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
-                        <li><a href="#impact" class="text-gray-400 hover:text-white transition">Impact</a></li>
-                        <li><a href="#achievements" class="text-gray-400 hover:text-white transition">Achievements</a>
-                        </li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition">
-                            <i class="fab fa-twitter text-2xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
-                            <i class="fab fa-linkedin text-2xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
-                            <i class="fab fa-instagram text-2xl"></i>
-                        </a>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <div class="text-2xl font-bold text-green-500 mb-4">
+              <i class="fas fa-recycle mr-2"></i>Tazalyq AI
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Tazalyq AI. All rights reserved.</p>
+            <p class="text-gray-400">
+              Transforming waste management through artificial intelligence
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-white transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#impact"
+                  class="text-gray-400 hover:text-white transition"
+                  >Impact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#achievements"
+                  class="text-gray-400 hover:text-white transition"
+                  >Achievements</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <i class="fab fa-twitter text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
             </div>
+          </div>
         </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 Tazalyq AI. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
-
